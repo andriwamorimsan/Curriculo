@@ -13,16 +13,13 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Andriw Amorim Santarém | Currículo",
-  description: "Currículo de Andriw Amorim Santarém — Analista de Sistemas Júnior.",
+  title: "Andriw Amorim Santarém | Analista de Sistemas",
+  description: "Portfólio profissional de Andriw Amorim Santarém — Analista de Sistemas Júnior.",
 };
 
 export default function RootLayout({ children }: LayoutProps<"/">) {
   return (
-    <html
-      lang="pt-BR"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
+    <html lang="pt-BR" className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}>
       <body className="min-h-full flex flex-col">{children}</body>
     </html>
   );
